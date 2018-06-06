@@ -1,0 +1,35 @@
+body {
+	font-family: "Arial",Arial,Helvetica,Tahoma,sans-serif;
+	font-size: 14px;
+  line-height: 1.428571429;
+  color: #000;
+  background-color: #e0ebeb;
+}
+.banner {
+	margin-top: -10px;
+}
+.banner img {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		max-width: 1120px;
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/*.navbar-default {
+	background: transparent;
+}
+.navbar-fixed-top {
+   position: fixed;
+}*/
+.nav {
+	list-style: none;
+}
+.menu-item {
+		float: left;
+}
