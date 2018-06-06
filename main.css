@@ -4,32 +4,44 @@ body {
   line-height: 1.428571429;
   color: #000;
   background-color: #e0ebeb;
+	margin: auto;
+	max-width: 1120px;
 }
 .banner {
-	margin-top: -10px;
+	margin-top: -9px;
 }
 .banner img {
 		display: block;
-		margin-right: auto;
+		/*margin-right: auto;
 		margin-left: auto;
 		width: 100%;
-		max-width: 1120px;
+		max-width: 1120px;*/
 }
-.container {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+.navbar {
+	background-color: rgba(76, 175, 80, 0.45);
+	/*width: 1120px;
+	margin: auto;*/
+	margin-top: -54px;
+	position: relative;
+	overflow: hidden;
 }
-/*.navbar-default {
-	background: transparent;
+.navbar a {
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+	width: 7%;
+	padding: 15px;
+	display: block;
+	float: left;
+	text-decoration: none;
 }
-.navbar-fixed-top {
-   position: fixed;
-}*/
-.nav {
-	list-style: none;
+.navbar a:hover {
+	background-color:  rgba(90, 231, 80, 0.45);
 }
-.menu-item {
-		float: left;
+.active {
+	background-color:  rgba(90, 231, 80, 0.45);
+}
+.first-p {
+	padding: 20px 25px;
+	background-color: #c7e5c5;
 }
