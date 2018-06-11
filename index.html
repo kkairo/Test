@@ -6,11 +6,32 @@
 		<title>FrontEnd</title>
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="fontawesome-all.css">
+		<script type="text/javascript" src="main.js"></script>
+		<style>
+		#navbar-links .navbar .responsive {
+				position: relative;
+			}
+			.navbar .responsive .menuIcon {
+				position: absolute;
+				right: 0;
+				left: 0;
+			}
+			.navbar .responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
+			<a class="logo">
+				<picture>
+					<img src="media/qualia_logo_medium_210x70.png">
+				</picture>
+			</a>
 			<div class="banner">
-				<img src="nature_banner_1120x230.jpg" class="img-responsive">
+				<img src="media/nature_banner_1120x230.jpg" class="img-responsive">
 			</div>
 			<div class="navbar" id="navbar-links">
 					<a class="nav-link active" title="Esimene" href="index.html">Esimene</a>
@@ -18,6 +39,8 @@
 					<a class="nav-link" title="Kolmas" href="#">Kolmas</a>
 					<a class="nav-link" title="Neljas" href="#">Neljas</a>
 					<a class="nav-link" title="Viies" href="#">Viies</a>
+					<a class="nav-link menuIcon" href="javascript:void(0);" onclick="showMenuIcon()">
+					<i class="fas fa-bars"></i></a>
 			</div>
 		</header>
 		<div class="content">
@@ -25,7 +48,7 @@
 				<h4 class="content-block-title">First content block</h4>
 				<div class="content-block-content">
 					<div class="rsp-media">
-							<img src="green-waterdrops_250x200.jpg" class="img-responsive">
+							<img src="media/green-waterdrops_250x200.jpg" class="img-responsive">
 					</div>
 					<p>In semper fringilla quam, eget dignissim sem consectetur vel. Nullam eu sagittis sem, a tincidunt ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec maximus hendrerit dolor, sit amet hendrerit diam facilisis at. Mauris rutrum libero dui, ac porta ante mattis pretium. Morbi ac odio luctus, tempus dui blandit, ultrices leo. Duis ut justo sed justo egestas tempus.</p>
 					<ul>
@@ -63,6 +86,24 @@
 				</table>
 			</div>
 		</div>
-		<script type="text/javascript" src="main.js"></script>
+		<footer>
+			<div class="footer-links-container">
+				<a title="©LMM. All rights reserved" href="#">©LMM. All rights reserved</a>
+				<a title="Terms and conditions" href="#">Terms and conditions</a>
+				<a title="Privacy Policy" href="#">Privacy Policy</a>
+				<a title="Social Media" href="#">Social Media</a>
+				<a title="Contact Us" href="#">Contact Us</a>
+			</div>
+		</footer>
+		<script>
+		function showMenuIcon() {
+		    var x = document.getElementById("navbar-links");
+		    if (x.className === "navbar") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "navbar";
+		    }
+		}
+	</script>
 	</body>
 </html>
